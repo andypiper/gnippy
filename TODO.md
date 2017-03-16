@@ -1,0 +1,10 @@
+- write tests
+- write samples
+- check error codes
+- update any doc/support links
+- compliance api multiple shards
+- add search counts
+- add insights apis
+- add historical PT
+- suport volume streams
+- check this works with both raw and AS formats
