@@ -4,7 +4,7 @@
 - update any doc/support links
 - compliance api multiple shards
 - add search counts
-- add insights apis
+- add engagement API
 - add historical PT
-- suport volume streams
-- check this works with both raw and AS formats
+- support volume streams
+- check functionality with raw and AS formats
