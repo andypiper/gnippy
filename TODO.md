@@ -1,5 +1,4 @@
 - write tests
-- write samples
 - check error codes
 - update any doc/support links
 - compliance api multiple shards
