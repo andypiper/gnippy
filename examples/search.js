@@ -10,24 +10,16 @@ var options = {
   user: nconf.get('USER'),
   password: nconf.get('PASSWORD'),
   stream_name: nconf.get('STREAM_NAME'),
-  debug: nconf.get('DEBUG')
+  debug: nconf.get('DEBUG'),
+  query: {
+    query: 'andypiper'
+  }
 };
 
-var mgr  = new Gnippy.Powertrack.Rules(options);
+var search  = new Gnippy.Search.Twitter(options);
 
-var newrule = { "value": "#dogs", "tag": "fun" };
-// var delrule = { "id": 859347783144353800 };
-
-mgr.on('error', function(err){
-  console.error(err);
-});
-
-mgr.on('success', function(data){
+search.on('data', function(data){
   console.dir(JSON.stringify(data));
 });
 
-//mgr.add(newrule);
-
-//mgr.remove(delrule);
-
-mgr.list();
+search.start();
